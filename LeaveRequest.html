@@ -9,7 +9,7 @@
          <h1>Student Leave Application System</h1>
       </header>
       <div class="container">
-         <form action="Login_student.html">
+         <form>
             <label for="leave-type">Leave Type:</label>
             <select id="leave-type" name="leave-type">
                <option value="sick Leave">Sick Leave</option>
@@ -63,7 +63,7 @@
             var x = document.getElementById("Name").value;
             
             function ADD(){
-            ;
+            location.href='Login_student.html';
             db.collection("Data").add({
             Name:x,
             Leave_Type:b,
